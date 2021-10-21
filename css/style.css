@@ -56,21 +56,26 @@ aside {
     margin-top: 40px;
 }
 .logo {
-margin: 0px 138px;
+display: block;
+margin: 0 auto;
 }
 
 .nav {
     margin-top: 60px;
 }
 .icon-nav {
-    margin-left: 25px;
+    width: 28px;
+    height: 28px;
+    margin-right: 20px;
 }
 a {
     text-decoration: none;
     display: flex;
+    align-items: center;
     text-transform: uppercase;
     font-size: 18px;
     color: #65676D;
+    padding: 20px;
 }
 
 a:hover { 
@@ -85,12 +90,12 @@ a:hover {
 
 
 .header {
-    padding: 40px 40px;
+    padding: 20px 30px;
+    align-items: center;
 }
 
 .search-bar {
     background:#F7F6F4;
-    height: 40px;
     width: 240px;
     left: 30px;
     top: 20px;
@@ -105,16 +110,11 @@ a:hover {
     background-color: transparent; 
 }
 
-.bell, .img-user{
+.bell, .img-user {
     height: 50px;
     width: 50px;
-}
-
-.bell {
-    margin-top: 32px;
-}
-.img-user{
-    margin-top: 15px;
+    background-color: #FFFFFF;
+    border: 0;
 }
 
 
@@ -135,19 +135,38 @@ h1 {
 .section-google {
     margin-bottom: 40px;
 }
-.google-header,{
+.google-header {
     padding: 35px;
 }
-.container-google {
+.img-google {
+    height: 64px;
+    width: 64px;
+}
+
+.content-google, .content-slack {
+ margin-left: 30px;
+ margin-right: 30px;
+ margin-bottom: 30px;
+}
+.left{
     display: flex;
-    padding: 30px 0px;
+    align-items: left;
 }
 .text {
+  
 }
+
 .little {
     font-size: 16px;
     font-weight: 500;
     line-height: 19px;
+}
+.img-button {
+    background-color: #FFFFFF;
+    border: 0;
+}
+.buttons {
+    align-items: right;
 }
 .blue{
     background-color: #545DAD;
@@ -209,7 +228,7 @@ display: flex;
 }
 .slack-light-green-teg2 {
     background-color: #F0F8EF;
-    padding: 9px, 25px 9px 25px;
+    padding: 9px 25px 9px 25px;
     color: #60B158;
 }
 
@@ -238,6 +257,11 @@ display: flex;
 }
 /*слак*/
 
+
+
+.slack-header {
+    padding: 30px;
+}
 .light-pink{
     background-color: #F5ECF2;
 }
