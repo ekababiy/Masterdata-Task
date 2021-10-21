@@ -143,7 +143,7 @@
                         <div class="teg teg-red"> high priority </div>
                     </div>
                     <div class="readiness">
-                        <p class="done"> Task Done: <span class="number">25</span>/50 </p>
+                        <p class="task-done"> Task Done: <span class="number">25</span>/50 </p>
                         <div>
                             <div class="light-blue"> <div class="blue"></div> </div>
                         </div>
@@ -197,7 +197,7 @@
                         <div class="teg slack-light-green-teg"> medium priority </div>
                     </div>
                     <div class="readiness">
-                        <p class="done"> Task Done: <span class="number">20</span>/30 </p>
+                        <p class="task-done"> Task Done: <span class="number">20</span>/30 </p>
                         <div>
                             <div class="light-pink"><div class="pink"></div></div>
                         </div>
@@ -225,13 +225,14 @@
                         <div class="circle">+5</div>
                     </div>
                     <div class="tegs3">
-                    <div class="teg slack-teg3-red"> due date: 15 july </div>
+                    <div class="teg teg3-red"> due date: 15 july </div>
                     </div>
                     </div>
                 </div>
             </div>
 
         <div class="task-and-google">
+
             <div class="my-tasks background">
                 <div class="tasks-header flex-space-between">
                     <div class="title">
@@ -243,14 +244,14 @@
                     </div>
                 </div>
                 <div class="container-tasks">
-                    <div class="task">
-                        <div class="number-task">01</div>
-                        <div class="name-task">Create Wireframe</div>
-                        <div class="">
-                            <button type="button" class="white-button">  </button>
-                            <button type="button" class="white-button">  </button>
-                        </div>
-                        <button type="button" class="done white-button"> <img src="svg/icon.svg" alt=""></button>
+                    <div class="task flex-space-between">
+                            <div class="number-task">01</div>
+                            <div class="name-task">Create Wireframe</div>
+                            <div class="">
+                                <button type="button" class="white-button">  </button>
+                                <button type="button" class="white-button">  </button>
+                            </div>
+                            <button type="button" class="done white-button"> <img src="svg/icon.svg" alt=""></button>
                     </div>
                     <div class="task">
                         <div class="number-task">02</div>
@@ -259,7 +260,7 @@
                             <button type="button" class="white-button"> <span class="number-task">3</span><img src="svg/comment.svg" alt=""> </button>
                             <button type="button" class="white-button"> <span class="number-task">5</span><img src="svg/share.svg" alt=""> </button>
                         </div>
-                        <button class="done white-button" type="button"> <img src="svg/icon.svg" alt=""></button>
+                        <button type="button" class="done white-button"> <img src="svg/icon.svg" alt=""></button>
                     </div>
                     <div class="task">
                         <div class="number-task">03</div>
@@ -311,18 +312,18 @@
                     </div>
                     <div class="right-block">
                         <div class="time-audio-google">25m20s</div>
-                        <button type="button" class="white-button"> <img src="svg/pause.svg" alt=""></button>
-                        <button type="button" class="white-button"> <img src="svg/more.svg" alt=""></button>
+                        <button type="button" class="orange-button"> <img src="svg/pause.svg" alt=""></button>
+                        <button type="button" class="orange-button"> <img src="svg/more.svg" alt=""></button>
                     </div>
                 </div>
                 <div class="audio-slack-header flex-space-between">
                     <h1> Slack </h1>
-                    <button type="button" class="white-button"> <img src="svg/pleey.svg" alt=""></button>
+                    <button type="button" class="play white-button"> <img src="svg/pleey.svg" alt=""></button>
                 </div>
                 <div class="audio-slack-players">
                     <div class="audio-slack-player flex-space-between">
                         <div class="left-block">
-                            <div class="icon white-button><img src="svg/belt-gray.svg" alt=""></div>
+                            <div class="icon white-button"> <img src="svg/belt-gray.svg" alt=""> </div>
                             <div class="name-audio-slack">Slack Logo Design</div>
                         </div>
                         <div class="right-block">
@@ -361,8 +362,10 @@
                 <div class="datepicker-top">
                     <div class="month-selector flex-space-between">
                         <span class="month-name">Jan 2021</span>
-                        <button type="button-calendar" class="white-button"><img src="svg/left.svg" alt=""></button>
-                        <button type="button-calendar" class="white-button"><img src="svg/right.svg" alt=""></button>
+                        <div class="button-left-right"
+                        <button type="button-calendar" class="white-button button-left"><img src="svg/left.svg" alt=""></button>
+                        <button type="button-calendar" class="white-button button-right"><img src="svg/right.svg" alt=""></button>
+                        </div>
                     </div>
                 </div>
                 <div class="datepicker-calendar">
@@ -424,7 +427,7 @@
             </div>
             <div class="messages background">
                 <div class="title-messages">
-                    <h1>Message</h1>
+                    <h1 class="massage-title">Message</h1>
                 </div>
                 <div class="messages-container">
                     <div class="message">
