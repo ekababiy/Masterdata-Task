@@ -142,10 +142,14 @@ h1 {
 }
 
 .content-google, .content-slack {
-    margin-left: 30px;
-    margin-right: 30px;
-    margin-bottom: 30px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 40px;
 }
+.section-slack, .section-google {
+    padding-bottom: 30px;
+}
+
 .left{
     display: flex;
     align-items: left;
@@ -242,14 +246,27 @@ h1 {
 }
 
 .people {
- display: flex;
+    display: flex;
+    margin-left: 10px;
 }
-
+.person-item {
+    margin-left: -15px;
+}
+.circle-white {
+    background-color: #FFFFFF;
+    height: 40px;
+    width: 40px;
+    border: 2px solid #ECECEC;
+    border-radius: 50%;
+}
+.cercle-white-five {
+ margin: 11px;
+}
 .teg3-red {
     background-color: #FFF2EC;
     padding: 9px 15px 9px 15px;
     color: #FD7B38;
-    float: left;
+    width: 150px;
 }
 /*слак*/
 
@@ -288,7 +305,9 @@ margin-right: 30px;
 
 
 /*задачи*/
-
+.right-block, .left-block {
+    display: flex;
+}
 .task-and-google {
     flex-grow: 1;
     margin-right: 40px;
@@ -302,10 +321,23 @@ margin-right: 30px;
 .tasks-header {
     padding-left: 20px;
     padding-top: 36px;
+    width: 467px;
 }
+.task {
+    border-bottom: 2px solid #ECECEC;
+}
+.container-tasks {
+    display: block;
 
-.done {
-    float: right;
+}
+.number-name-task {
+    display: flex;
+}
+.button-task {
+   
+}
+.done-task {
+   
 }
 .span-my-tasks {
     color: #65676D;
@@ -329,6 +361,7 @@ margin-right: 30px;
 }
 
 /*аудио часть*/
+
 .audio-google-header{
     padding-left: 30px;
     padding-top: 36px;
@@ -348,6 +381,10 @@ border-left: 6px solid  #FD7B38;
     font-size: 14px;
     font-weight: 500;
     line-height: 17px;
+    margin-left: 10px;
+}
+.icon-google-bell {
+    margin-left: 18px;
 }
 
 .time-audio-google {
@@ -419,7 +456,9 @@ border-left: 6px solid  #FD7B38;
 .date {
     justify-self: center;
 }
-
+.circle-date {
+    display: flex;
+}
 .date {
     border: 0;
     padding: 0;
@@ -433,6 +472,7 @@ border-left: 6px solid  #FD7B38;
     border: 2px solid transparent;
     background-color: transparent;
     cursor: pointer;
+    flex-direction: column;
 }
 .date:focus {
     outline: 0;
@@ -447,8 +487,8 @@ border-left: 6px solid  #FD7B38;
 .current-day {
     height: 36px;
     width: 36px;
-    left: 6.px;
-    top: 94.px;
+    left: 6px;
+    top: 94px;
     border-radius: 100px;
     color: #FFF;
     border-color: #FD7B38;
@@ -489,6 +529,7 @@ button:focus {
     height: 6px;
     width: 6px;
     left: 10px;
+    margin-left: 4px;
 }
 
 
