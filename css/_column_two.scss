@@ -1,0 +1,91 @@
+@import 'base';
+
+.column-two {
+  @include column;
+  .tasks {
+    @include background;
+    padding: 20px 0;
+    .tasks-header {
+      padding: 16px 20px;
+      @include flex-between;
+      .title {
+        display: flex;   
+        .span-my-tasks {
+          color: $gray;
+          font-size: 20px;
+          font-weight: 600;
+          line-height: 24px;
+          margin-left: 10px;
+        }
+      }
+    }
+
+    .container-tasks {
+      display: block;
+      .task {
+        border-bottom: 2px solid $very-light-gray;
+        padding: 16px 20px;
+        @include flex-between;
+        align-items: center;
+        .row-task {
+          display: flex;
+          .number-task {
+            color: $gray;
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 22px;
+          }
+          .name-task {
+            color: $gray;
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 22px;
+            margin-left: 20px;
+            .line-through {
+              text-decoration: line-through;
+            }
+          }
+        }
+        .button-task {
+          display: flex;
+          width: 100px;
+          align-items: center;
+          gap: 20px;
+        }
+      }
+    }
+  }
+
+  .player {
+    @include background;
+    padding: 20px 0;
+    .audio-header {
+      @include flex-between;
+      padding: 16px 48px 16px 30px;
+      align-items: center;
+      h2 {
+        @include subject;
+      }
+      .play-button {
+        width: 36px;
+        height: 36px;
+      }
+    }
+
+    .audio-player {
+      @include flex-between;
+      padding: 10px 20px;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      align-items: center;
+      &:first-child {
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+      }
+    }
+
+    .orange-container {
+      background-color: #FFF2EC;
+      border-left: 6px solid #FD7B38;
+      border-bottom: none;
+    }
+  }
+}

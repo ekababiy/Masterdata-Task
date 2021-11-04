@@ -1,0 +1,39 @@
+@import 'base';
+@import 'nav_and_search-bar';
+@import 'column_one';
+@import 'column_two';
+@import 'column_three';
+
+
+html {
+  height: 100%;
+  body {
+    font-family: "SF Pro Text";
+    height: 100%;
+    .container {
+      display: flex;
+      width: 1920px;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 40px;
+      gap: 40px;
+      background-color: $light-gray;
+      aside {
+        width: 318px;
+        flex-grow: 0;
+        flex-shrink: 0;
+        &.nav-block {
+          padding: 40px 0px;
+        }
+      }
+      .wrapper {
+        flex-grow: 1;
+        .row {
+          flex-grow: 1;
+          display: flex;
+          gap: 40px;
+        }
+      }
+    }
+  }
+}

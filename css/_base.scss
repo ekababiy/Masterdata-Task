@@ -1,0 +1,81 @@
+$black:#000000;
+$white: #FFFFFF;
+$light-red:#ff6c65;
+$lime-green:#60b158;
+
+$vivid-orange: #FBBC04;
+$pure-orange:#FFA800;
+$orange: #FD7B38;
+$very-pale-orange:#FFF2EC;
+$light-grayish-orange: #F7F6F4;
+
+$soft-pink:#E257B3;
+$light-pink: #FFF4EE;
+$light-grayish-pink: #F5ECF2;
+
+
+$dark-moderate-blue:#545DAD;
+$blue: #007AFF;
+$light-grayish-blue: #E8EAF2;
+$very-light-grayish-blue:#F1F2F4;
+
+$gray: #65676D;
+$bright-gray: #E1E1E1;
+$light-gray:#E5E5E5;
+$very-light-gray:#ECECEC;
+$light-grayish-lime-green:#F0F8EF;
+
+@font-face {
+    font-family: "SF Pro Text";
+    src: url(../fonts/SF-UI-Text-Bold.ttf);
+    font-weight: 700;
+  }
+  
+  @font-face {
+    font-family: "SF Pro Text";
+    src: url(../fonts/SF-UI-Text-Semibold.ttf);
+    font-weight: 600;
+  }
+  
+  @font-face {
+    font-family: "SF Pro Text";
+    src: url(../fonts/SF-UI-Text-Medium.ttf);
+    font-weight: 500;
+  }
+  
+  @font-face {
+    font-family: "SF Pro Text";
+    src: url(../fonts/SF-UI-Text-Regular.ttf);
+    font-weight: 400;
+  }
+
+@mixin flex-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+@mixin button {
+  border: none;
+  background: transparent;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin background {
+  background-color: $white;
+  border-radius: 20px;
+  padding: 30px;
+}
+@mixin subject {
+  font-size: 20px;
+  font-weight: 700;
+}
+@mixin column {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 100%;
+  flex-grow: 1;
+}

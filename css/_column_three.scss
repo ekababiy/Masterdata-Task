@@ -1,0 +1,150 @@
+@import 'base';
+
+
+
+.column-three {
+  @include column;
+  .calendar {
+    @include background;
+    .datepicker-top {
+      margin-bottom: 47px;
+      .month-selector {
+        @include flex-between;
+        .month-name {
+          font-size: 28px;
+          font-weight: 700;
+          line-height: 33px;
+        }
+
+        .button-left-right {
+          display: flex;
+          gap: 20px;
+        }
+      }
+    }
+
+    .datepicker-calendar {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      grid-row-gap: 1rem;
+      button {
+        font: inherit;
+        cursor: pointer;
+        &:focus {
+          outline: 0;
+        }
+      }
+
+      .day { 
+        justify-self: center;
+        color: $black;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+        text-transform: uppercase;
+      }
+      .date {
+        justify-self: center;
+        color: $gray;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        padding: 0;
+        width: 2.25rem;
+        height: 2.25rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 6px;
+        font-weight: 600;
+        border: 2px solid transparent;
+        background-color: transparent;
+        cursor: pointer;
+        flex-direction: column;
+        &:focus {
+          outline: 0;
+          color: $orange;
+          border: 2px solid var(--c-theme-primary-accent);
+        }
+
+        .dot-orange {
+          border-radius: 50%;
+          background-color: $orange;
+          height: 6px;
+          width: 6px;
+          left: 15px;
+        }
+        .dot-date {
+          display: flex;
+          .dot-blue {
+            border-radius: 50%;
+            background-color: $blue;
+            height: 6px;
+            width: 6px;
+            left: 20px;
+          }
+          .dot-yellow {
+            border-radius: 50%;
+            background-color: $vivid-orange;
+            height: 6px;
+            width: 6px;
+            left: 10px;
+            margin-left: 4px;
+          }
+        }
+      }
+
+      .current-day {
+        height: 36px;
+        width: 36px;
+        left: 6px;
+        top: 94px;
+        border-radius: 100px;
+        color: $white;
+        border-color: $orange;
+        background-color: $orange;
+        &-day:focus {
+          background-color: var(--c-theme-primary-accent);
+        }
+      }
+
+      .faded {
+        opacity: 30%;
+        color: var(--c-text-secondary);
+      }
+    }
+  }
+
+  .messages {
+    @include background;
+    &-title {
+      margin-bottom: 16px;
+      h2 {
+        @include subject;
+      }      
+    }
+    &-container {
+      margin-left: -30px;
+      margin-right: -30px;
+      .message {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 12px 30px;
+        .card-message {
+          margin-left: 20px;
+        }
+        .name {
+          font-size: 20px;
+          font-weight: 600;
+          line-height: 24px;
+        }
+        .text-message {
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 17px;
+        }
+      }
+    }
+  }
+}

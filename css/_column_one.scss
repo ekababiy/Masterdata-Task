@@ -1,0 +1,185 @@
+@import 'base';
+
+
+.column-one {
+@include column;
+
+.social-google {
+  @include background;
+  // @include flex-between;
+  margin-bottom: 30px;
+  .google-flex-box {
+    @include flex-between;
+  .google-header-left {
+  
+    align-items: center;
+    .img-google {
+      height: 64px;
+      width: 64px;
+    }
+    .google-text {
+      margin-left: 20px;
+      @include subject;
+      .subtitle {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 19px;
+      }
+    }
+  }
+  .buttons {
+    display: flex;
+    align-items: center;
+    .star-button + .kebab-button {
+      margin-right: -24px;
+      margin-left: 14px;
+    }
+    .star-button {
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid $bright-gray;
+      border-radius: 50%;
+      padding: 0;
+      background: transparent;
+    }
+    .kebab-button {
+      height: 50px;
+      width: 50px;
+      background-color: $white;
+      border: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0;
+    }
+  }
+}
+ task-done {
+  color: $gray;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  .bold-number {
+    color: $black;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+.success {
+  &-light-blue{
+    background-color: $light-grayish-blue;
+    height: 8px;
+    border-radius: 10px;
+  }
+  &-blue {
+    background-color: $dark-moderate-blue;
+    width: 227px;
+    height: 8px;
+    border-radius: 10px;
+  }
+  
+}
+  .people {
+    display: flex;
+    margin-left: 10px;
+    .person-item {
+      margin-left: -15px;
+    }
+    .circle-white {
+      background-color: $white;
+      height: 40px;
+      width: 40px;
+      border: 2px solid $very-light-gray;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .cercle-white-five {
+        margin: 11px;
+      }
+    }
+  }
+}
+}
+
+
+
+.social-slack {
+  @include background;
+  .slack-header{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    .slack-flex-box{
+      @include flex-between;
+      .slack-header-left{
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+
+        .img-slack {
+          height: 64px;
+          width: 64px;
+        }
+        .slack-text {
+          margin-left: 20px;
+          @include subject;
+          .subtitle {
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 19px;
+          }
+        }
+      }
+      .buttons {
+        display: flex;
+        align-items: center;
+        .star-button + .kebab-button {
+          margin-right: -24px;
+          margin-left: 14px;
+        }
+        .star-button {
+          width: 40px;
+          height: 40px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border: 2px solid $bright-gray;
+          border-radius: 50%;
+          padding: 0;
+          background: transparent;
+        }
+        .kebab-button {
+          height: 50px;
+          width: 50px;
+          background-color: $white;
+          border: 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 0;
+        }
+      
+      }
+    }
+  }
+  .content-slack {
+    .success {
+      &-light-pink {
+        background-color: $light-grayish-pink;
+        border-radius: 10px;
+        height: 8px;
+      }
+      &-pink {
+        background-color: $soft-pink;
+        border-radius: 10px;
+        height: 8px;
+        width: 290px;
+      }
+    }
+  }
+}
