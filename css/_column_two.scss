@@ -17,6 +17,7 @@
           line-height: 24px;
           margin-left: 10px;
         }
+
       }
     }
 
@@ -41,20 +42,29 @@
             font-weight: 600;
             line-height: 22px;
             margin-left: 20px;
-            .line-through {
-              text-decoration: line-through;
-            }
           }
         }
-        .button-task {
+        .button-tasks {
           display: flex;
           width: 100px;
           align-items: center;
           gap: 20px;
+          .button-task {
+            @include discharge;
+          }
+        }
+        .done-task {
+          @include discharge;
         }
       }
     }
   }
+    .line-through {
+      text-decoration: line-through;
+    }
+    .white-button {
+      @include discharge;
+    }
 
   .player {
     @include background;
@@ -80,12 +90,45 @@
       &:first-child {
         border-top: 1px solid rgba(0, 0, 0, 0.1);
       }
+      .left-block {
+        align-items: center;
+      }
+      .right-block {
+        align-items: center;
+        .name-audio, .time-audio {
+          color: #65676D;
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 17px;
+          margin-left: 10px;
+        }
+        .orange-button {
+          background-color: $very-pale-orange;
+          border: none;
+        }
+      }
     }
 
     .orange-container {
-      background-color: #FFF2EC;
-      border-left: 6px solid #FD7B38;
+      background-color: $very-pale-orange;
+      border-left: 6px solid $orange;
       border-bottom: none;
     }
   }
+}
+
+.time-audio-google {
+  color: #000000;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+  margin-right: 10px;
+}
+.play-button {
+  width: 36px;
+  height: 36px;
+}
+
+.more-button {
+  margin-left: 4px;
 }

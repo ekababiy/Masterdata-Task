@@ -79,3 +79,7 @@ $light-grayish-lime-green:#F0F8EF;
   width: 100%;
   flex-grow: 1;
 }
+@mixin discharge {
+  background-color: $white;
+  border: none;
+}

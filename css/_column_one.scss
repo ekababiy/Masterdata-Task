@@ -55,34 +55,65 @@
       justify-content: center;
       padding: 0;
     }
+    .tegs {
+      .teg-gray {
+        background-color: #F1F2F4;
+        padding: 9px 14px 9px 14px;
+        color: #65676D;
+      }
+      
+      .teg-red {
+        border: 1px solid #FF6C65;
+        color: #FF6C65;
+        padding: 9px 14px 9px 14px;
+      }
+    }
   }
-}
- task-done {
-  color: $gray;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 22px;
-  .bold-number {
-    color: $black;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 22px;
   }
-}
-.success {
-  &-light-blue{
-    background-color: $light-grayish-blue;
-    height: 8px;
-    border-radius: 10px;
+  .task-done-block {
+    task-done {
+      color: $gray;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 22px;
+      .bold-number {
+        color: $black;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+      }
+    }
   }
-  &-blue {
-    background-color: $dark-moderate-blue;
-    width: 227px;
-    height: 8px;
-    border-radius: 10px;
+  .success {
+    &-light-blue{
+      background-color: $light-grayish-blue;
+      height: 8px;
+      border-radius: 10px;
+    }
+    &-blue {
+      background-color: $dark-moderate-blue;
+      width: 227px;
+      height: 8px;
+      border-radius: 10px;
+    }
+    
   }
-  
-}
+  .tegs2 {
+    display: flex;
+    .teg-green {
+      background-color: #F0F8EF;
+      padding: 9px 25px 9px 25px;
+      color: #60B158;
+    
+    }
+    
+    .teg-blue {
+      background-color: #E6F2FF;
+      padding: 9px 19px 9px 19px;
+      color: #007AFF;
+      margin-left: 12px;
+    }
+  }
   .people {
     display: flex;
     margin-left: 10px;
@@ -165,9 +196,17 @@
         }
       
       }
+     
     }
   }
   .content-slack {
+    .tegs {
+      .slack-light-green-teg2 {
+        background-color: #F0F8EF;
+        padding: 9px 25px 9px 25px;
+        color: #60B158;
+      }
+    }
     .success {
       &-light-pink {
         background-color: $light-grayish-pink;
@@ -181,5 +220,44 @@
         width: 290px;
       }
     }
+
+  .people {
+    display: flex;
+    margin-left: 10px;
+    .person-item {
+      margin-left: -15px;
+    }
+    .circle-white {
+      background-color: $white;
+      height: 40px;
+      width: 40px;
+      border: 2px solid $very-light-gray;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .cercle-white-five {
+        margin: 11px;
+      }
+    }
   }
 }
+}
+  .tegs, .readiness, .tegs2, .people, .task-done {
+    margin-bottom: 20px;
+  }
+  .teg {
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 14px;
+    border-radius: 6px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .teg3-red {
+    background-color: #FFF2EC;
+    padding: 9px 15px 9px 15px;
+    color: #FD7B38;
+    width: 150px;
+  }

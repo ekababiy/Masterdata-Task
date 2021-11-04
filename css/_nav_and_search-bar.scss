@@ -63,14 +63,12 @@ padding: 40px 0px;
         height: 24px;
         margin-right: 30px;
         .button-bell {
-          background-color: $white;
-          border: none;
+          @include discharge;
         }
       }
       .user-settings {
        &-button {
-         background-color: $white;
-         border: none;
+        @include discharge;
        }
       }
     }

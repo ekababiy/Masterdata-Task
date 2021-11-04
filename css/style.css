@@ -275,14 +275,26 @@
   padding: 0;
 }
 
-.column-one .social-google task-done {
+.column-one .social-google .google-flex-box .buttons .tegs .teg-gray {
+  background-color: #F1F2F4;
+  padding: 9px 14px 9px 14px;
+  color: #65676D;
+}
+
+.column-one .social-google .google-flex-box .buttons .tegs .teg-red {
+  border: 1px solid #FF6C65;
+  color: #FF6C65;
+  padding: 9px 14px 9px 14px;
+}
+
+.column-one .social-google .task-done-block task-done {
   color: #65676D;
   font-weight: 600;
   font-size: 18px;
   line-height: 22px;
 }
 
-.column-one .social-google task-done .bold-number {
+.column-one .social-google .task-done-block task-done .bold-number {
   color: #000000;
   font-weight: 600;
   font-size: 18px;
@@ -300,6 +312,25 @@
   width: 227px;
   height: 8px;
   border-radius: 10px;
+}
+
+.column-one .social-google .tegs2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.column-one .social-google .tegs2 .teg-green {
+  background-color: #F0F8EF;
+  padding: 9px 25px 9px 25px;
+  color: #60B158;
+}
+
+.column-one .social-google .tegs2 .teg-blue {
+  background-color: #E6F2FF;
+  padding: 9px 19px 9px 19px;
+  color: #007AFF;
+  margin-left: 12px;
 }
 
 .column-one .social-google .people {
@@ -435,6 +466,12 @@
   padding: 0;
 }
 
+.social-slack .content-slack .tegs .slack-light-green-teg2 {
+  background-color: #F0F8EF;
+  padding: 9px 25px 9px 25px;
+  color: #60B158;
+}
+
 .social-slack .content-slack .success-light-pink {
   background-color: #F5ECF2;
   border-radius: 10px;
@@ -446,6 +483,58 @@
   border-radius: 10px;
   height: 8px;
   width: 290px;
+}
+
+.social-slack .content-slack .people {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 10px;
+}
+
+.social-slack .content-slack .people .person-item {
+  margin-left: -15px;
+}
+
+.social-slack .content-slack .people .circle-white {
+  background-color: #FFFFFF;
+  height: 40px;
+  width: 40px;
+  border: 2px solid #ECECEC;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.social-slack .content-slack .people .circle-white .cercle-white-five {
+  margin: 11px;
+}
+
+.tegs, .readiness, .tegs2, .people, .task-done {
+  margin-bottom: 20px;
+}
+
+.teg {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 14px;
+  border-radius: 6px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.teg3-red {
+  background-color: #FFF2EC;
+  padding: 9px 15px 9px 15px;
+  color: #FD7B38;
+  width: 150px;
 }
 
 @font-face {
@@ -557,11 +646,7 @@
   margin-left: 20px;
 }
 
-.column-two .tasks .container-tasks .task .row-task .name-task .line-through {
-  text-decoration: line-through;
-}
-
-.column-two .tasks .container-tasks .task .button-task {
+.column-two .tasks .container-tasks .task .button-tasks {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -570,6 +655,25 @@
       -ms-flex-align: center;
           align-items: center;
   gap: 20px;
+}
+
+.column-two .tasks .container-tasks .task .button-tasks .button-task {
+  background-color: #FFFFFF;
+  border: none;
+}
+
+.column-two .tasks .container-tasks .task .done-task {
+  background-color: #FFFFFF;
+  border: none;
+}
+
+.column-two .line-through {
+  text-decoration: line-through;
+}
+
+.column-two .white-button {
+  background-color: #FFFFFF;
+  border: none;
 }
 
 .column-two .player {
@@ -620,10 +724,52 @@
   border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
+.column-two .player .audio-player .left-block {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.column-two .player .audio-player .right-block {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.column-two .player .audio-player .right-block .name-audio, .column-two .player .audio-player .right-block .time-audio {
+  color: #65676D;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17px;
+  margin-left: 10px;
+}
+
+.column-two .player .audio-player .right-block .orange-button {
+  background-color: #FFF2EC;
+  border: none;
+}
+
 .column-two .player .orange-container {
   background-color: #FFF2EC;
   border-left: 6px solid #FD7B38;
   border-bottom: none;
+}
+
+.time-audio-google {
+  color: #000000;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+  margin-right: 10px;
+}
+
+.play-button {
+  width: 36px;
+  height: 36px;
+}
+
+.more-button {
+  margin-left: 4px;
 }
 
 @font-face {
@@ -695,6 +841,16 @@
   display: -ms-flexbox;
   display: flex;
   gap: 20px;
+}
+
+.column-three .calendar .datepicker-top .month-selector .button-left-right .button-left {
+  background-color: #FFFFFF;
+  border: none;
+}
+
+.column-three .calendar .datepicker-top .month-selector .button-left-right .button-right {
+  background-color: #FFFFFF;
+  border: none;
 }
 
 .column-three .calendar .datepicker-calendar {
